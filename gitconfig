@@ -1,0 +1,12 @@
+# Questo è il file di configurazione utente di Git.
+[user]
+# Adatta e decommenta le seguenti righe:
+	name = Luca
+	email = luca.ferri88@gmail.com
+[core]
+	excludesFile = /Users/luca/.gitignore_global
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
